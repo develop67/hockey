@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-THIN.TTF") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-EXTRALIGHT.TTF") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-LIGHT.TTF") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-REGULAR.TTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-MEDIUM.TTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-SEMIBOLD.TTF") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RALEWAY-BOLD.TTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  @include hover-focus {
+    text-decoration: none;
+  }
+}

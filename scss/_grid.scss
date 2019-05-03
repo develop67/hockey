@@ -1,0 +1,31 @@
+.container-hdp {
+  @include make-container();
+  @media (min-width: 1600px) {
+    max-width: 1490px;
+  }
+}
+
+@include make-grid-columns($grid-columns, $grid-gutter-width, $wide-grid-breakpoints);
+
+// Margin and padding
+@each $breakpoint in map-keys($wide-grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint, $wide-grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $wide-grid-breakpoints);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      .#{$abbrev}#{$infix}-0 { #{$prop}:         0 !important; }
+      .#{$abbrev}t#{$infix}-0 { #{$prop}-top:    0 !important; }
+      .#{$abbrev}r#{$infix}-0 { #{$prop}-right:  0 !important; }
+      .#{$abbrev}b#{$infix}-0 { #{$prop}-bottom: 0 !important; }
+      .#{$abbrev}l#{$infix}-0 { #{$prop}-left:   0 !important; }
+      .#{$abbrev}x#{$infix}-0 {
+        #{$prop}-right: 0 !important;
+        #{$prop}-left:  0 !important;
+      }
+      .#{$abbrev}y#{$infix}-0 {
+        #{$prop}-top:    0 !important;
+        #{$prop}-bottom: 0 !important;
+      }
+    }
+  }
+}
