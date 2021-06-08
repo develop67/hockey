@@ -1,0 +1,27 @@
+{
+  "name": "hockey",
+  "description": "Hockey web app.",
+  "version": "0.1.0",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "html",
+    "js",
+    "javascript",
+    "sass"
+  ],
+  "author": "Filancy",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
